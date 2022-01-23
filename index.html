@@ -1,85 +1,87 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>TOQUEMOS EL DOM</title>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>TOQUEMOS EL DOM</title>
+	</head>
 
-<body class="container" >
-	
-	<div class="grid-container" id="inicio">		
+	<body class="container" >
 		
-		<!--BEGIN HEADER-->
-		<header class="header">
-			<h1>Toquemos el Dom</h1>
+		<div class="grid-container" id="inicio">		
 			
-			<a href="">Acerca de nosotros</a>
-			<a href="">Notas sobre música</a>
-			<a href="">Nuestras redes</a>
+			<!--BEGIN HEADER-->
+			<header class="header">
+				<h1>Toquemos el Dom</h1>
+				
+				<a href="info.html">Acerca de nosotros</a>
+				<a href="info.html">Notas sobre música</a>
+				<a href="info.html">Nuestras redes</a>
 
-		</header>
-		<!--END HEADER-->
+			</header>
+			<!--END HEADER-->
 
 
-		<!--BEGIN SIDEBAR-->
-		<div class="sidebar">
-			
-			<nav>
-				<div id="instrumentos">
-					<a href="#piano" id="navpiano">Piano</a>
-					<a href="#bateria" id="navbateria">Batería</a>
-					<a href="#marimbas" id="navmarimbas">Marimba</a>
-				</div>
-				<a href="" id="others">Otros Instrumentos</a>
-			</nav>
+			<!--BEGIN SIDEBAR-->
+			<div class="sidebar">
+				
+				<nav>
+					<div id="instrumentos">
+						<a href="#piano" id="nav-acerca">Piano</a>
+						<a href="#bateria" id="nav-notas">Batería</a>
+						<a href="#marimbas" id="nav-redess">Marimba</a>
+					</div>
+					<a href="" id="others">Otros Instrumentos</a>
+				</nav>
 
+			</div>
+			<!--END SIDEBAR-->
+
+			<!--BEGIN SECTION MAIN-->
+
+			<section class="main">
+
+				<!--BEGIN SECTION PIANO-->
+				<section id="piano">
+					<button><a href="#inicio">Volver a inicio</a></button>
+					piano
+					<div>prueba</div>
+				</section>
+		
+				<!--END SECTION PIANO-->
+
+				<!--BEGIN SECTION BATERIA-->
+
+				<section id="bateria">
+					<button><a href="#inicio">Volver a inicio</a></button>
+					bateria
+				</section>
+
+				<!--END SECTION BATERIA-->
+
+				<!--BEGIN SECTION MARIMBAS-->
+
+				<section id="marimbas">
+					<button><a href="#inicio">Volver a inicio</a></button>
+					marimbas
+				</section>
+
+				<!--END SECTION MARIMBAS-->
+
+			</section>
+			<!--END SECTION MAIN-->
+
+			<!--BEGIN FOOTER-->
+
+			<footer class="footer">
+				&copy;Sitio desarrollado por Diana Chavez y Ronald Rosero/Todos los derechos reservados. Prográmate/Educamás/2022.
+			</footer>
+
+			<!--END FOOTER-->
 		</div>
-		<!--END SIDEBAR-->
-
-		<!--BEGIN SECTION MAIN-->
-
-		<section class="main">
-
-			<!--BEGIN SECTION PIANO-->
-			<section id="piano">
-				<button><a href="#inicio">Volver a inicio</a></button>
-				piano
-			</section>	
-			<!--END SECTION PIANO-->
-
-			<!--BEGIN SECTION BATERIA-->
-
-			<section id="bateria">
-				<button><a href="#inicio">Volver a inicio</a></button>
-				bateria
-			</section>
-
-			<!--END SECTION BATERIA-->
-
-			<!--BEGIN SECTION MARIMBAS-->
-
-			<section id="marimbas">
-				<button><a href="#inicio">Volver a inicio</a></button>
-				marimbas
-			</section>
-
-			<!--END SECTION MARIMBAS-->
-
-		</section>
-		<!--END SECTION MAIN-->
-
-		<!--BEGIN FOOTER-->
-
-		<footer class="footer">
-			&copy;Sitio desarrollado por Diana Chavez y Ronald Rosero/Todos los derechos reservados. Prográmate/Educamás/2022.
-		</footer>
-
-		<!--END FOOTER-->
-	</div>
-	<script type="text/javascript"  src="js/piano.js"></script>
-	<script type="text/javascript"  src="js/bateria.js"></script>
-	<script type="text/javascript"  src="js/marimba.js"></script>
-</body>
+		<script type="text/javascript"  src="js/piano.js"></script>
+		<script type="text/javascript"  src="js/bateria.js"></script>
+		<script type="text/javascript"  src="js/marimba.js"></script>
+	</body>
 </html>
