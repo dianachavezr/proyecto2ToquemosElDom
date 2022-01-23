@@ -237,7 +237,7 @@ button{
 	display: flex;
 }
 
-#nav-piano, #nav-notas, #nav-redess{
+#navpiano, #navbateria, #navmarimbas{
 	height: 5rem;
 	margin: 2% auto;
 	display: flex;
@@ -254,7 +254,7 @@ button{
 	padding: 3% 5%;
 	}
 
-#piano, #redes,#notas{
+	#piano, #marimbas,#bateria{
 	height: 120vh;
 }
 }
