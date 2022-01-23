@@ -136,7 +136,7 @@ button{
 }
 
 
-#piano, #marimbas,#bateria{
+#acerca, #redes,#notas{
 	position: relative;
 	height: 100vh;
 	display: flex;
@@ -146,7 +146,7 @@ button{
 	z-index: 1;
 }
 
-#piano, #bateria{
+#acerca, #notas{
 	border-bottom: 2px solid #2C032B;
 }
 
@@ -254,7 +254,7 @@ button{
 	padding: 3% 5%;
 	}
 
-#piano, #marimbas,#bateria{
+#acerca, #redes,#notas{
 	height: 120vh;
 }
 }
