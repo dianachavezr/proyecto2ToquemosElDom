@@ -93,6 +93,15 @@ nav a{
 	border-style: groove;
 }
 
+.elementos-acerca {
+	font-family: 'Signika Negative', sans-serif;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+	color: #000000;
+}
+
 #nav-acerca{
 		background: #3B0717;
 	}

@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<link rel="stylesheet" href="./css/stylesPiano.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>TOQUEMOS EL DOM</title>
 	</head>
@@ -28,9 +29,9 @@
 				
 				<nav>
 					<div id="instrumentos">
-						<a href="#piano" id="nav-acerca">Piano</a>
-						<a href="#bateria" id="nav-notas">Batería</a>
-						<a href="#marimbas" id="nav-redess">Marimba</a>
+						<a href="#piano" id="navpiano">Piano</a>
+						<a href="#bateria" id="navbateria">Batería</a>
+						<a href="#marimbas" id="navmarimbas">Marimba</a>
 					</div>
 					<a href="" id="others">Otros Instrumentos</a>
 				</nav>
@@ -45,8 +46,65 @@
 				<!--BEGIN SECTION PIANO-->
 				<section id="piano">
 					<button><a href="#inicio">Volver a inicio</a></button>
-					piano
-					<div>prueba</div>
+						<!-- whole keypiano wrapper -->
+					<div class="piano">
+						<div data-note="C3" class="key  white"></div>
+						<div data-note="Cb" class="key black"></div>
+						<div data-note="D3" class="key white"></div>
+						<div data-note="EB" class="key black"></div>
+						<div data-note="E3" class="key white"></div>
+						<div data-note="F3" class="key white"></div>
+						<div data-note="FB" class="key black"></div>
+						<div data-note="G3" class="key white"></div>
+						<div data-note="GB" class="key black"></div>
+						<div data-note="A3" class="key white"></div>
+						<div data-note="AB" class="key black"></div>
+						<div data-note="B3" class="key white"></div>
+
+						<!-- segunda octava -->
+						<div data-note="C4" class="key  white"></div>
+						<div data-note="Cb" class="key black"></div>
+						<div data-note="D4" class="key white"></div>
+						<div data-note="DB" class="key black"></div>
+						<div data-note="E4" class="key white"></div>
+						<div data-note="F4" class="key white"></div>
+						<div data-note="FB" class="key black"></div>
+						<div data-note="G4" class="key white"></div>
+						<div data-note="GB" class="key black"></div>
+						<div data-note="A4" class="key white"></div>
+						<div data-note="AB" class="key black"></div>
+						<div data-note="B4" class="key white"></div>
+						<!-- end piano  -->
+					
+						<!-- audios primera octava -->
+						<audio id="C3" src="notas/48.mp3"></audio>
+						<audio id="Cb" src="notas/49.mp3"></audio>
+						<audio id="D3" src="notas/50.mp3"></audio>
+						<audio id="EB" src="notas/51.mp3"></audio>
+						<audio id="E3" src="notas/52.mp3"></audio>
+						<audio id="F3" src="notas/53.mp3"></audio>
+						<audio id="FB" src="notas/54.mp3"></audio>
+						<audio id="G3" src="notas/55.mp3"></audio>
+						<audio id="GB" src="notas/56.mp3"></audio>
+						<audio id="A3" src="notas/57.mp3"></audio>
+						<audio id="AB" src="notas/58.mp3"></audio>
+						<audio id="B3" src="notas/59.mp3"></audio>
+
+						<!-- audios segunda octava -->
+
+						<audio id="C4" src="notas/60.mp3"></audio>
+						<audio id="CB" src="notas/61.mp3"></audio>
+						<audio id="D4" src="notas/62.mp3"></audio>
+						<audio id="DB" src="notas/63.mp3"></audio>
+						<audio id="E4" src="notas/64.mp3"></audio>
+						<audio id="F4" src="notas/65.mp3"></audio>
+						<audio id="FB" src="notas/66.mp3"></audio>
+						<audio id="G4" src="notas/67.mp3"></audio>
+						<audio id="GB" src="notas/68.mp3"></audio>
+						<audio id="A4" src="notas/69.mp3"></audio>
+						<audio id="AB" src="notas/70.mp3"></audio>
+						<audio id="B4" src="notas/71.mp3"></audio>
+					</div>
 				</section>
 		
 				<!--END SECTION PIANO-->

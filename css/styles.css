@@ -254,7 +254,7 @@ button{
 	padding: 3% 5%;
 	}
 
-	#piano, #marimbas,#bateria{
+#piano, #marimbas,#bateria{
 	height: 120vh;
 }
 }
