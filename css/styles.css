@@ -123,6 +123,7 @@ nav a{
 	display: flex;
 	display: inline-block;
 }
+/* comienzo piano */
 
 button{
 	position: absolute;
@@ -136,6 +137,36 @@ button{
 }
 
 
+
+.piano {
+	position: absolute;
+	top: 50%;
+	
+}
+
+.btn {
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	padding: 20px;
+	border-radius: 25%;
+	background: #000000;
+	border: none;
+
+}
+.tecla-a {
+	position: absolute;
+	bottom: 5%;
+	left: 20%;
+	color: white;
+
+}
+.notas-activada {
+	position: absolute;
+	bottom: 5%;
+	left: 20%;
+	color: black;
+}
 #piano, #marimbas,#bateria{
 	position: relative;
 	height: 100vh;
@@ -149,6 +180,7 @@ button{
 #piano, #bateria{
 	border-bottom: 2px solid #2C032B;
 }
+
 
 /*BEGIN FOOTER STYLES***********************/	
 
