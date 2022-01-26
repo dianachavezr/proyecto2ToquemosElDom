@@ -14,6 +14,8 @@ const playPiano = document.querySelector('.botonO')
 const iconPiano = document.querySelector('.icono-piano')
 const piano2 = document.getElementById('piano')
 
+
+
 playPiano.addEventListener('click', (e) => {
     
     e.target.classList.toggle('activated')
@@ -27,8 +29,7 @@ playPiano.addEventListener('click', (e) => {
         
 
         keys.forEach(key => {
-            
-
+    
             key.addEventListener('click', () => playNote(key))
         })
 
@@ -38,10 +39,19 @@ playPiano.addEventListener('click', (e) => {
             console.log('imprimiendo la tecla: ' + key);
             const whiteKeyIndex = WHITE_KEYS.indexOf(key)
             const blackKeyIndex = BLACK_KEYS.indexOf(key)
+            function activarTeclado (){
+                if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex])
+                if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex])
+
+            }
             
-            if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex])
-            if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex])
+            
             console.log(e);
+            if (playPiano.classList.contains('activated')){
+                activarTeclado()
+
+            }
+
         })
         
         function playNote(key) {
@@ -95,10 +105,8 @@ playPiano.addEventListener('click', (e) => {
           piano.classList.remove('pianoVisible')
           iconPiano.classList.remove('ocultar-icono')
           buttonSeeNotes.classList.remove('notas-on')
-          document.removeEventListener('keydown', playNote)
-
-
-        
+    
+    
     }
     
 })

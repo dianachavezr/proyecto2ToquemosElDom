@@ -157,8 +157,8 @@ button{
 
 	visibility: hidden;
 	position: absolute;
-	top: 10%;
-	left: 30%;
+	top: 35%;
+	left: 10%;
 	padding: 20px;
 	color: white;
 	border-radius: 25%;
@@ -171,8 +171,8 @@ button{
 .notas-on {
 	visibility: visible;
 	position: absolute;
-	top: 10%;
-	left: 30%;
+	top: 35%;
+	left: 10%;
 	padding: 20px;
 	border-radius: 25%;
 	background: #000000;
