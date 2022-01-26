@@ -1,11 +1,17 @@
 // const WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm']
 // const BLACK_KEYS = ['s', 'd', 'g', 'h', 'j']
 
+const BLACK_KEYS = ['q', 'w', 'e', 'r', 'y', 'u', 'i', 'o', 'p', 'l']
+const WHITE_KEYS = ['a', 's', 'z', 'd', 'x', 'f', 'g', 'h', 'k', 'j', 'c', 'b', 'n', 'm',]
+const keys = document.querySelectorAll('.key')
+const whiteKeys = document.querySelectorAll('.key.white')
+const blackKeys = document.querySelectorAll('.key.black')
 
+
+const buttonSeeNotes = document.getElementById('btn')
 const piano = document.querySelector('.pianoPruba')
 const playPiano = document.querySelector('.botonO')
 const iconPiano = document.querySelector('.icono-piano')
-const verNotes = document.querySelector('.ver-Notas-off')
 const piano2 = document.getElementById('piano')
 
 playPiano.addEventListener('click', (e) => {
@@ -16,15 +22,9 @@ playPiano.addEventListener('click', (e) => {
     if (playPiano){
         piano.classList.add('pianoVisible')
         iconPiano.classList.add('ocultar-icono')
-        verNotes.classList.add('notas-on')
+        buttonSeeNotes.classList.add('notas-on')
         console.log('activado');
-        const BLACK_KEYS = ['q', 'w', 'e', 'r', 'y', 'u', 'i', 'o', 'p', 'l']
-        const WHITE_KEYS = ['a', 's', 'z', 'd', 'x', 'f', 'g', 'h', 'k', 'j', 'c', 'b', 'n', 'm',]
-
-
-        const keys = document.querySelectorAll('.key')
-        const whiteKeys = document.querySelectorAll('.key.white')
-        const blackKeys = document.querySelectorAll('.key.black')
+        
 
         keys.forEach(key => {
             
@@ -46,9 +46,6 @@ playPiano.addEventListener('click', (e) => {
         
         function playNote(key) {
             const noteAudio = document.getElementById(key.dataset.note)
-            console.log(key.dataset);
-            console.log(key.dataset.note);
-            console.log(noteAudio);
             noteAudio.currentTime = 0
             noteAudio.play()
             key.classList.add('active')
@@ -57,7 +54,7 @@ playPiano.addEventListener('click', (e) => {
             })
         }
 
-        const buttonSeeNotes = document.getElementById('btn')
+        
 
         buttonSeeNotes.addEventListener('click', (e) => {
             
@@ -97,7 +94,7 @@ playPiano.addEventListener('click', (e) => {
           console.log('desativado');
           piano.classList.remove('pianoVisible')
           iconPiano.classList.remove('ocultar-icono')
-          verNotes.classList.remove('notas-on')
+          buttonSeeNotes.classList.remove('notas-on')
           document.removeEventListener('keydown', playNote)
 
 
