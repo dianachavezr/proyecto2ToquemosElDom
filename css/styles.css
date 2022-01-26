@@ -136,14 +136,6 @@ button{
 	border: none;
 }
 
-
-
-.piano {
-	position: absolute;
-	top: 50%;
-	
-}
-
 .btn {
 	position: absolute;
 	top: 10%;
@@ -154,19 +146,16 @@ button{
 	border: none;
 
 }
-.tecla-a {
-	position: absolute;
-	bottom: 5%;
-	left: 20%;
-	color: white;
 
-}
-.notas-activada {
+.piano {
 	position: absolute;
-	bottom: 5%;
-	left: 20%;
-	color: black;
+	top: 50%;
+	
 }
+
+
+
+
 #piano, #marimbas,#bateria{
 	position: relative;
 	height: 100vh;

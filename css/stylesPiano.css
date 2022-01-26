@@ -2,6 +2,44 @@
     display: flex;
     
   }
+
+  .notesBlack-off {
+    position: relative;
+    top: 85%;
+    font-size: 1rem;
+    color: black;
+  
+  }
+  
+  .keyboard {
+    position: absolute;
+    bottom: 15%;
+    left: 32%;
+    color: black;
+
+  }
+  .notesBlack-on {
+    position: relative;
+    top: 85%;
+    font-size: 1rem;
+    color: white;
+  
+  }
+  
+  
+  .notes-off {
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    color: white;
+  
+  }
+  .notes-on {
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    color: black;
+  }
   
   .white  {
     position: relative;

@@ -1,5 +1,9 @@
-const WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm']
-const BLACK_KEYS = ['s', 'd', 'g', 'h', 'j']
+// const WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm']
+// const BLACK_KEYS = ['s', 'd', 'g', 'h', 'j']
+
+const BLACK_KEYS = ['q', 'w', 'e', 'r', 'y', 'u', 'i', 'o', 'p', 'l']
+const WHITE_KEYS = ['a', 's', 'z', 'd', 'x', 'f', 'g', 'h', 'k', 'j', 'c', 'b', 'n', 'm',]
+
 
 const keys = document.querySelectorAll('.key')
 const whiteKeys = document.querySelectorAll('.key.white')
@@ -15,6 +19,7 @@ keys.forEach(key => {
 document.addEventListener('keydown', e => {
     if (e.repeat) return
     const key = e.key
+    console.log('imprimiendo la tecla: ' + key);
     const whiteKeyIndex = WHITE_KEYS.indexOf(key)
     const blackKeyIndex = BLACK_KEYS.indexOf(key)
 
@@ -24,6 +29,9 @@ document.addEventListener('keydown', e => {
 
 function playNote(key) {
     const noteAudio = document.getElementById(key.dataset.note)
+    console.log(key.dataset);
+    console.log(key.dataset.note);
+    console.log(noteAudio);
     noteAudio.currentTime = 0
     noteAudio.play()
     key.classList.add('active')
@@ -32,26 +40,37 @@ function playNote(key) {
     })
 }
 
-const ayuda = document.querySelector('.btn')
+const buttonSeeNotes = document.querySelector('.btn')
 
+buttonSeeNotes.addEventListener('click', (e) => {
+    
+    e.target.classList.toggle('activated')
+    let notesWhite = document.querySelectorAll(".notes-off");
+    let notesBlack = document.querySelectorAll(".notesBlack-off");
 
-ayuda.addEventListener('click', (e) => {
-    console.log('antes');
-    e.target.classList.toggle('activado')
-    let nota = document.querySelector(".tecla-a");
-    if (ayuda.classList.contains('activado')){
-            console.log(ayuda.classList.contains('activado'));
-            console.log('estamos activados');
-            nota.classList.add('notas-activada')
-            
-            
-    } 
-    if (!(ayuda.classList.contains('activado'))){
-        console.log(ayuda.classList.contains('activado'));
-        console.log('estamos activados');
-        nota.classList.remove('notas-activada')
+    if (buttonSeeNotes){
+        notesWhite.forEach(note => {
+            note.classList.add('notes-on')
+        })   
+        notesBlack.forEach(note => {
+            note.classList.add('notesBlack-on')
+        }) 
+    }
+
+    if (!(buttonSeeNotes.classList.contains('activated'))){
+        notesWhite.forEach(note => {
+            note.classList.remove('notes-on')
        
+        }) 
+        notesBlack.forEach(note => {
+            note.classList.remove('notesBlack-on')
+       
+        })      
+        
     }
     
-
 })
+
+
+
+
