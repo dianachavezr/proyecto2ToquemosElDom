@@ -1,14 +1,10 @@
   .piano {
-    display: flex;
     
+    display:none;
   }
 
-  .notesBlack-off {
-    position: relative;
-    top: 85%;
-    font-size: 1rem;
-    color: black;
-  
+  .pianoVisible {
+    display: flex;
   }
   
   .keyboard {
@@ -18,6 +14,7 @@
     color: black;
 
   }
+
   .notesBlack-on {
     position: relative;
     top: 85%;
@@ -25,20 +22,26 @@
     color: white;
   
   }
-  
-  
-  .notes-off {
-    position: absolute;
-    bottom: 5%;
-    left: 25%;
-    color: white;
+  .notesBlack-off {
+    position: relative;
+    top: 85%;
+    font-size: 1rem;
+    color: black;
   
   }
+  
   .notes-on {
     position: absolute;
     bottom: 5%;
     left: 25%;
     color: black;
+  
+  }
+  .notes-off {
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    color: white;
   }
   
   .white  {

@@ -125,6 +125,11 @@ nav a{
 }
 /* comienzo piano */
 
+.ocultar-icono {
+	visibility: hidden;
+	
+
+}
 button{
 	position: absolute;
 	display: flex;
@@ -136,7 +141,35 @@ button{
 	border: none;
 }
 
-.btn {
+.botonO {
+	position: absolute;
+	top: 20%;
+	left: 43%;
+	padding: 20px;
+	border-radius: 25%;
+	color: white;
+	background: #000000;
+	border: none;
+
+}
+
+.ver-Notas-off {
+
+	visibility: hidden;
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	padding: 20px;
+	color: white;
+	border-radius: 25%;
+	background: #000000;
+	border: none;
+	
+
+}
+
+.notas-on {
+	visibility: visible;
 	position: absolute;
 	top: 10%;
 	left: 30%;
@@ -146,6 +179,10 @@ button{
 	border: none;
 
 }
+
+
+
+
 
 .piano {
 	position: absolute;
