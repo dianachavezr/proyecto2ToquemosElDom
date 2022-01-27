@@ -1,56 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
 /*
-font-family: 'Montserrat', sans-serif;
-font-family: 'Work Sans', sans-serif;
+
 font-family: 'Sedgwick Ave', cursive;
 font-family: 'Signika Negative', sans-serif;
 */
 
 *{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html{
-	height: 100% ;
+    height: 100% ;
 }
 
 body{
-	min-height: 100%;
-	background: #000000;
-	font-family: 'Signika Negative', sans-serif;
-	color: #DFDEDE;
+    min-height: 100%;
+    background: #000000;
+    font-family: 'Signika Negative', sans-serif;
+    color: #DFDEDE;
 }
 
 h1{
-	font-family: 'Sedgwick Ave', cursive;
-	color: #ffffff;
-	font-size: 3rem;
+    font-family: 'Sedgwick Ave', cursive;
+    color: #ffffff;
+    font-size: 3rem;
 }
 
 a{
-	text-decoration: none;
-	color: #DFDEDE;
+    text-decoration: none;
+    color: #DFDEDE;
 }
 
 .grid-container > *{
-	box-shadow: -1px 1px 7px 2px gray;
-	border-radius: 4px;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    box-shadow: -1px 1px 7px 2px gray;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*BEGIN HEADER STYLES***********************/
 .header{
-	grid-area: header;
-	display: flex;
-	justify-content: space-evenly;
+    grid-area: header;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /*END HEADER STYLES***********************/
@@ -58,59 +56,57 @@ a{
 
 /*BEGIN SIDEBAR STYLES***********************/
 .sidebar{
-	grid-area: sidebar;
-	background: hotpink;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	background-image: url(../images/Note_key_white.png);
-	background-size: cover;
-	z-index: 2;
+    grid-area: sidebar;
+    background: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../images/Note_key_white.png);
+    background-size: cover;
+    z-index: 2;
 }
 
 nav{
-	position: sticky;
-	top: 0;
+    position: sticky;
+    top: 0;
 }
 
 nav a{
-	display: block;
-	font-family: 'Sedgwick Ave', cursive;
-	color: #DFDEDE;
-	font-weight: bolder;
-	font-size: 1.1rem;
+    display: block;
+    font-family: 'Sedgwick Ave', cursive;
+    color: #DFDEDE;
+    font-weight: bolder;
+    font-size: 1.1rem;
 }
 
-#navpiano, #navbateria, #navmarimbas{
-	width: 100%;
-	height: 10rem;
-	margin: 10% auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 0 50%;
-	opacity: 0.9;
-	border-style: groove;
+#navpiano, #navbateria{
+    width: 100%;
+    height: 10rem;
+    margin: 50% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 50%;
+    opacity: 0.9;
+    border-style: groove;
 }
 
 #navpiano{
-		background: #3B0717;
-	}
+    background:#3B0717
+    }
+    
 
 #navbateria{
-	background: #06196B;
-}
-
-#navmarimbas{
-	background: #000000;
+    background: #06196B;
 }
 
 #others {
-	background: #2C032B;
-	padding: 20px;
-	border-radius: 0 50%;
-	color: #DFDEDE;
-	opacity: 0.9;
+    visibility: hidden;
+    background: #2C032B;
+    padding: 20px;
+    border-radius: 0 50%;
+    color: #DFDEDE;
+    opacity: 0.9;
 }
 
 /*END SIDEBAR STYLES***********************/
@@ -118,250 +114,426 @@ nav a{
 
 /*BEGIN MAIN STYLES***********************/
 .main{
-	grid-area: main;
-	background: #ffffff;
-	display: flex;
-	display: inline-block;
+    grid-area: main;
+    background: #ffffff;
+    display: flex;
+    display: inline-block;
 }
-/* comienzo piano */
+
+button{
+    position: absolute;
+    display: flex;
+    top: 5%;
+    left: 5%;
+    padding: 20px;
+    border-radius: 25%;
+    background: #000000;
+    border: none;
+}
+
+#piano, #bateria{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    z-index: 1;
+    border-bottom: 2px solid #2C032B;
+    
+}
+
+
+/* Begin styles piano */
 .titulo-piano {
-	margin:5% 0 1% 0;
-	font-family: 'Sedgwick Ave', cursive;
-	font-size: 2rem;
-	background-color:#3B0717;
-	position: absolute;
-	top: 5%;
-	left: 30%;
-	color: #DFDEDE;
-	padding: 2% 4% 1% 4%;
-	border-radius: 0 50% 0 50%;
-	opacity: 0.8;
-	border-style: groove ;
+    margin:5% 0 1% 0;
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 2rem;
+    background-color:#3B0717;
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    color: #DFDEDE;
+    padding: 2% 4% 1% 4%;
+    border-radius: 0 50% 0 50%;
+    opacity: 0.8;
+    border-style: groove ;
 
 }
 
 
 .icono-piano{
-	position: absolute;
-	top: 30%;
-	left: 30%;
-
-
-
-
-
+	background: red;
+    position: absolute;
+    max-width: 450px;
+    width: 100%;
+    height: 400px;
+    top: 30%;
+    left: 23%;
 }
+
 .ocultar-icono {
-	visibility: hidden;
-	
+    visibility: hidden;
+    
 
 }
 button{
-	position: absolute;
-	display: flex;
-	top: 5%;
-	left: 5%;
-	padding: 20px;
-	border-radius: 25%;
-	background: #000000;
-	border: none;
+    position: absolute;
+    display: flex;
+    top: 5%;
+    left: 5%;
+    padding: 20px;
+    border-radius: 25%;
+    background: #000000;
+    border: none;
 }
 
 .botonO {
-	position: absolute;
-	top: 30%;
-	left: 43%;
-	padding: 20px;
-	border-radius: 25%;
-	color: white;
-	background: #000000;
-	border: none;
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    padding: 20px;
+    border-radius: 25%;
+    color: white;
+    background: #000000;
+    border: none;
 
 }
 
 .boton-ver-notas-off {
 
-	visibility: hidden;
-	position: absolute;
-	top: 35%;
-	left: 10%;
-	padding: 20px;
-	color: white;
-	border-radius: 25%;
-	background: #2c032b;
-	border: none;
-	
+    visibility: hidden;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    padding: 20px;
+    color: white;
+    border-radius: 25%;
+    background: #2c032b;
+    border: none;
+    
 
 }
 
 .boton-ver-notas-on {
-	visibility: visible;
-	position: absolute;
-	top: 35%;
-	left: 10%;
-	padding: 20px;
-	border-radius: 25%;
-	background: #2c032b;
-	border: none;
+    visibility: visible;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    padding: 20px;
+    border-radius: 25%;
+    background: #2c032b;
+    border: none;
 
 }
 
 .ver-teaclado-off {
-	visibility: hidden;
-	position: absolute;
-	top: 35%;
-	left: 75%;
-	padding: 20px;
-	color: white;
-	border-radius: 25%;
-	background: #2c032b;
-	border: none;
-	
+    visibility: hidden;
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    padding: 20px;
+    color: white;
+    border-radius: 25%;
+    background: #2c032b;
+    border: none;
+    
 
 }
 .ver-teaclado-on {
-	visibility: visible;
-	position: absolute;
-	top: 35%;
-	left: 75%;
-	padding: 20px;
-	color: white;
-	border-radius: 25%;
-	background: #2c032b;
-	border: none;
+    visibility: visible;
+    position: absolute;
+    top: 35%;
+    left: 75%;
+    padding: 20px;
+    color: white;
+    border-radius: 25%;
+    background: #2c032b;
+    border: none;
 
 }
 
 
 .piano {
-	position: absolute;
-	top: 50%;
-	
+    position: absolute;
+    top: 50%;
+    
 }
 
+/* End styles piano */
 
 
 
-#piano, #marimbas,#bateria{
-	position: relative;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 40px;
-	z-index: 1;
-}
-
-#piano, #bateria{
-	border-bottom: 2px solid #2C032B;
-}
 
 
-/*BEGIN FOOTER STYLES***********************/	
+/*BEGIN STYLES BATERIA************************************/
+
+
+.a {
+    background-image: url("../images/tom.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    top:55%;
+    left: 15%;
+  }
+
+.l {
+    background-image: url("../images/tom.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    top:55%;
+    left:60%;
+  }
+    
+  .s {
+    background-image: url("../images/hi-hat.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    top:10%;
+    left:20%;
+  }
+ 
+  .j {  
+    background-image: url("../images/snare-drum-with-white-lines.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    top:10%;
+    left:37%;
+  }
+  
+  .k {
+    background-image: url("../images/splash.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    top:10%;    
+    left: 57%;
+  }
+  
+  .drum.w {
+    background-image: url("../images/bass-drum.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    top:55%;
+    left:37%;
+    background-size: 9rem;
+  }
+  
+  .set {
+    
+    max-width: 1000px;
+    width: 100%;
+    min-height: 450px;
+    height: 70%;
+    
+
+  }
+  
+  .pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+  }
+  
+  
+  .drum {   
+    font-size: 3rem;
+    font-family: 'Sedgwick Ave', cursive;
+    line-height: 6;
+    font-weight: 900;
+    color: #06196B;
+    text-shadow: 3px 0 #DBEDF3;
+    border-radius: 30%;
+    width: 11rem;
+    height: 13rem;  
+    background-color: white;
+    background-size: 5rem;
+    
+  }
+
+/*END STYLES BATERIA************************************/
+
+
+/*BEGIN FOOTER STYLES***********************/   
 
 .footer{
-	grid-area: footer;
+    grid-area: footer;
 }
-/*END FOOTER STYLES***********************/	
+/*END FOOTER STYLES***********************/ 
 
 .grid-container{
-	display: grid;
-	gap: 7px;
-	grid-template:
-	"header header" 0.8fr
-	"sidebar  main" 12.5fr
-	"sidebar footer" 0.5fr/
-	1fr    4fr;
+    display: grid;
+    gap: 7px;
+    grid-template:
+    "header header" 0.3fr
+    "sidebar  main" 4fr
+    "sidebar footer" 0.3fr/
+    1fr    4fr;
 }
 
 
 /*END MAIN STYLES***********************/
 
-	/*RESPONSIVE TABLET********************/
 
-@media (max-width: 768px){
-	.grid-container{
-	grid-template:
-	"header header" 1fr
-	"sidebar main" 12.5fr
-	"sidebar footer" 0.5fr /
-	1fr    3fr;
+
+@media (max-width: 1024px){
+
+    .grid-container{
+        display: grid;
+        gap: 7px;
+        grid-template:
+        "header header" 0.2fr
+        "sidebar  main" 2fr
+        "sidebar footer" 0.3fr/
+        1fr    4fr;
+    }
+
+.icono-piano{
+	max-width: 450px;
+    width: 100%;
+    height: 350px;
+    
+}
+.titulo-piano {
+    margin:7% 0 ;
+      
+}
+    
 }
 
-#navpiano, #navbateria, #navmarimbas{
-	width: 80%;
-	height: 6rem;
-	margin: 10% auto;
+    /*RESPONSIVE TABLET********************/
+
+@media (max-width: 768px){
+    .grid-container{
+    grid-template:
+    "header header" 0.3fr
+    "sidebar main" 10.5fr
+    "sidebar footer"1fr/
+    1fr    3fr;
+}
+
+#navpiano, #navbateria{
+    width: 80%;
+    height: 6rem;
+    margin: 50% auto;
+
 }
 
 #others{
-	width: 80%;
-	margin: auto;
-	border-style: groove;
+    width: 80%;
+    margin: auto;
+    border-style: groove;
 }
+
+.titulo-piano {
+    margin:10% 0 0 0 ;
+      
 }
+.icono-piano{
+    left: 10%;
+}
+
+
+
+.drum { 
+    width: 8rem;
+    height: 8rem;
+  }
+  .drum.w{
+      background-size: 7rem;
+      top:60%;
+      left: 40%;
+  }
+
+  .a{
+      top:60%;
+      left: 10%;
+  }
+  .s{
+      top:18%;
+      left:15%;
+  }
+  
+  .l{
+    top:60%;
+     left:70%;
+  }
+
+  .j{
+    top:18%;
+      left: 45%;
+  }
+  .k{
+      top:18%;
+      left: 74%;
+  }
+
+}
+
+
 
 
 /*RESPONSIVE CELULAR***********************/
 
 @media (max-width: 640px){
 .grid-container{
-	grid-template:
-	"header"   0.5fr
-	"sidebar"   0.5fr
-	"main"	   7.3fr
-	"footer"  0.5fr;
+    grid-template:
+    "header"   0.5fr
+    "sidebar"   0.5fr
+    "main"     4fr
+    "footer"  0.3fr;
 }
 
 /*BEGIN HEADER CELULAR**************/
 
-.header {	
-	display: block;
-	padding: 5% 0;
+.header {   
+    display: block;
+    padding: 5% 0;
 }
 
 .header a{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
 }
 /*END HEADER CELULAR**************/
 
 /*BEGIN SIDEBAR CELULAR**************/
 .sidebar{
-	height: 30vh;
-	padding: 0 10px;
+    height: 30vh;
+    padding: 0 10px;
 }
 
 .sidebar nav{
-	padding: 0 0 20px 0;
+    padding: 0 0 20px 0;
 }
 
 #instrumentos{
-	width: 30rem;
-	height: 8rem;
-	display: flex;
+    width: 30rem;
+    height: 8rem;
+    display: flex;
 }
 
-#navpiano, #navbateria, #navmarimbas{
-	height: 5rem;
-	margin: 2% auto;
-	display: flex;
+#navpiano, #navbateria{
+    height: 5rem;
+    margin: 5% auto;
+    display: flex;
 }
 
-#others {
-	margin-top: -5%;
-	padding: 2%;
-}
 /*END SIDEBAR CELULAR**************/
 
-
 .main{
-	padding: 3% 5%;
-	}
+    padding: 3% 5%;
+    }
 
-#piano, #marimbas,#bateria{
-	height: 120vh;
+#piano,#bateria{
+    height: 120vh;
 }
+footer{
+    height: 100px;
 }
+
+}
+
+
+
+

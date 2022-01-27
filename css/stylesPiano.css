@@ -1,4 +1,4 @@
-  .piano {
+.piano {
     
     display:none;
   }
@@ -118,3 +118,34 @@
   }
   
   
+@media (max-width: 1024px){
+
+  .white{
+ 
+    width: 3.5rem!important;
+    height: 250px;
+  }
+
+  .black {
+    width: 2rem;
+    height: 120px;
+    margin: 0 -17px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .white{
+ 
+    width: 2.5rem!important;
+    height: 250px;
+    font-size: 0.8rem;
+  }
+
+  .black {
+    width: 2rem;
+    height: 120px;
+    margin: 0 -17px;
+    font-size: 0.8rem;
+  }
+}

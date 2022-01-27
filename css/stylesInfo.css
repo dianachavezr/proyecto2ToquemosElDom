@@ -59,7 +59,6 @@ a{
 /*BEGIN SIDEBAR STYLES***********************/
 .sidebar{
 	grid-area: sidebar;
-	background: hotpink;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -91,6 +90,7 @@ nav a{
 	border-radius: 0 50%;
 	opacity: 0.9;
 	border-style: groove;
+	padding: 20px;
 }
 
 .elementos-acerca {
@@ -136,28 +136,123 @@ nav a{
 button{
 	position: absolute;
 	display: flex;
-	top: 10%;
-	left: 10%;
+	top: 5%;
+	left: 5%;
+	padding: 20px;
+	border-radius: 25%;
+	background: #000000;
+	border: none;
+}
+#boton2{
+	visibility: hidden;
+	position: absolute;
+	display: flex;
+	top: 5%;
+	left: 30%;
 	padding: 20px;
 	border-radius: 25%;
 	background: #000000;
 	border: none;
 }
 
+#acerca, #notas{
+	border-bottom: 2px solid #2C032B;
+}
+#acerca{
+	position: relative;
+	height: 100vh;
+	display: block;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 3%;
+	z-index: 1;
+}
 
-#acerca, #redes,#notas{
+#acerca h2{
+	margin:5% 0 1% 0;
+	font-family: 'Sedgwick Ave', cursive;
+	font-size: 2rem;
+	background-color:#3B0717;
+	color: #DFDEDE;
+	padding: 2% 4% 1% 4%;
+	border-radius: 0 50% 0 50%;
+	opacity: 0.8;
+	border-style: groove ;
+}
+
+#acerca  p{
+	padding:10px 70px;	
+}
+
+#acerca img{
+	max-width: 500px;
+	width: 100%;
+	height: auto;
+	border-radius: 10%;
+	border-style: groove;
+}
+
+
+
+#notas{
 	position: relative;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
+	align-items: flex-start;
+	padding:3%;
+	z-index: 1;
+}
+
+#videoPiano, #videoBateria{
+	margin-top: 70px;
+	width: 50%;
+	height: 90%;
+	padding: 0 5%;
+	color: black;
+}
+
+#videoPiano{
+	border-right: 1px solid  #2C032B;
+}
+
+#videoPiano h3, #videoBateria h3{
+	background-color:#06196B;
+	color: #DFDEDE;
+	padding: 3%;
+	border-radius: 0 50% 0 50%;
+	opacity: 0.8;
+	margin-bottom: 10px;
+	border-style: groove;
+}
+
+iframe{
+	width: 100%;
+	height:70%;
+}
+
+
+
+#redes{
+	position: relative;
+	height: 50vh;
+	display: flex;
+	justify-content: space-evenly;
 	align-items: center;
 	padding: 40px;
 	z-index: 1;
 }
-
-#acerca, #notas{
-	border-bottom: 2px solid #2C032B;
+#redes img{
+	max-width: 6rem;
+	width: 100%;	
 }
+
+
+
+
+
+
+/*END MAIN STYLES***********************/
 
 /*BEGIN FOOTER STYLES***********************/	
 
@@ -177,7 +272,6 @@ button{
 }
 
 
-/*END MAIN STYLES***********************/
 
 	/*RESPONSIVE TABLET********************/
 
@@ -196,10 +290,67 @@ button{
 	margin: 10% auto;
 }
 
-#others{
+button{
+	top: 2%;
+	left: 2%;
+	padding: 10px;
+}
+#acerca{
+	padding: 10% 5%;
+}
+#acerca h2{
+	margin:4% 0 1% 0;
+	font-size: 1.5rem;
+}
+
+#acerca  p{
+	padding:0;
+	font-size: 0.8rem;
+	
+}
+
+#notas{
+	display: block;
+	height: auto;
+}
+
+#videoPiano, #videoBateria{
+	margin: 8% 0 3% 0;
+	width: 100%;
+	height: 33rem;
+	border-right: 1px solid black;
+	padding: 6% 2%;
+	color: black;
+	border: none;
+	border-bottom: 1px solid #3B0717;
+	
+}
+
+ #videoBateria{
+	margin-top: -3%;
+	height: 33rem;
+	border: none;
+}
+#videoBateria p, #videoPiano p{
+	margin-bottom: 10px;
+
+}
+
+
+
+#videoPiano h3, #videoBateria h3{
+	width: 70%;
+	margin-left: 15%;
+}
+
+
+iframe{
 	width: 80%;
-	margin: auto;
-	border-style: groove;
+	height:80%;
+}
+
+#redes img{
+	margin-top: 50%;	
 }
 }
 
@@ -211,7 +362,7 @@ button{
 	grid-template:
 	"header"   0.5fr
 	"sidebar"   0.5fr
-	"main"	   7.3fr
+	"main"	   6fr
 	"footer"  0.5fr;
 }
 
@@ -233,17 +384,19 @@ button{
 /*BEGIN SIDEBAR CELULAR**************/
 .sidebar{
 	height: 30vh;
-	padding: 0 10px;
+	padding: 20px 10px;
 }
 
 .sidebar nav{
 	padding: 0 0 20px 0;
+	
 }
 
 #instrumentos{
 	width: 30rem;
 	height: 8rem;
 	display: flex;
+	
 }
 
 #nav-acerca, #nav-notas, #nav-redes{
@@ -251,11 +404,19 @@ button{
 	margin: 2% auto;
 	display: flex;
 }
-
-#others {
-	margin-top: -5%;
-	padding: 2%;
+button{
+	top: 2%;
+	left: 1%;
 }
+
+#boton2{
+	visibility: visible;
+	top: 2%;
+	left: 40%;
+	padding: 10px;
+	background-color: #3B0717;
+}
+
 /*END SIDEBAR CELULAR**************/
 
 
@@ -263,7 +424,33 @@ button{
 	padding: 3% 5%;
 	}
 
-#acerca, #redes,#notas{
+#acerca, #notas{
 	height: 120vh;
 }
+
+#acerca{
+	padding: 6% 5%;
+}
+
+#acerca h2{
+	margin:12% 0 5% 0;
+	font-size: 1.5rem;
+}
+
+#acerca  p{
+	padding:0;
+	font-size: 0.8rem;
+}
+
+#notas{
+	display: block;
+	height: auto;
+
+}
+
+#redes img{
+	width: 80px;
+	margin: 100% 0 0 0;	
+}
+
 }
