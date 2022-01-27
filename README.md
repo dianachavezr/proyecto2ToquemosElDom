@@ -8,5 +8,6 @@
 
 Trabajaremos en crear una web para una una escuela de música online, con el plus de que los usuarios van a poder practicar con algunos de los instrumentos porque estos van a reproducir sonidos con click o con pulsaciones de teclado.
 
-
+<h3>🛠 Tech Stack </h3>
+- 🌐 &nbsp; HTML5 | CSS3 | JAVASCRIPT
 <h1> 🖥 Requerimientos técnicos </h1>
