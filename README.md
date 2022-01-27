@@ -27,6 +27,6 @@ La tecnología ha permitido que se puedan migrar a la virtualidad muchas de las 
 - 🌐 El código DEBE ser ordenado, identado, semántico y con buenas prácticas de desarrollo: clean code. <br/>
 - 🌐 La distribución del contenido DEBERÍA hacerse con Flex-box o Grid system. • No se pueden utilizar frameworks ni librerías, el desarrollo debe ser vanilla. <br/>
 
-<h2>Desarrolladores<h2>
-Diana Chavez
+<h1>Desarrolladores<h1>
+Diana Chavez <br/>
 Ronald Rosero 
