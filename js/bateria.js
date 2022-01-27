@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 /*Audio Bateria*/
     let audioBateria = document.querySelector(".audioBateria")
@@ -13,8 +12,6 @@
 
 
    
-=======
->>>>>>> bfc930622bb656cd1e83f69f566a4b2931f031ba
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numberOfDrumButtons; i++) {
@@ -54,11 +51,7 @@ function makeSound(key) {
       break;
 
     case "s":
-<<<<<<< HEAD
-      var hihat = new Audio('sounds/Hi-Hat-Open-Hit-mp3.mp3');
-=======
       var hihat = new Audio('sounds/Hi-Hat-Open-Hit-mp3');
->>>>>>> bfc930622bb656cd1e83f69f566a4b2931f031ba
       hihat.play();
       break;
 
