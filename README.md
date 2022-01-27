@@ -28,5 +28,6 @@ La tecnología ha permitido que se puedan migrar a la virtualidad muchas de las 
 - 🌐 La distribución del contenido DEBERÍA hacerse con Flex-box o Grid system. • No se pueden utilizar frameworks ni librerías, el desarrollo debe ser vanilla. <br/>
 
 <h1>Desarrolladores<h1>
-Diana Chavez  https://github.com/dianachavezr
-Ronald Rosero https://github.com/Ronrook
+  
+👩🏻‍💻 Diana Chavez  https://github.com/dianachavezr
+👨🏻‍💻 Ronald Rosero https://github.com/Ronrook
