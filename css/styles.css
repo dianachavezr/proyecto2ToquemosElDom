@@ -131,7 +131,101 @@ button{
 	border: none;
 }
 
+<<<<<<< HEAD
 #piano, #bateria{
+=======
+
+/*BEGIN STYLES BATERIA************************************/
+
+
+.a {
+	background-image: url("../images/tom.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top:55%;
+	left: 15%;
+  }
+
+.l {
+	background-image: url("../images/tom.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top:55%;
+	left:60%;
+  }
+    
+  .s {
+	background-image: url("../images/hi-hat.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top:10%;
+	left:20%;
+  }
+ 
+  .j {	
+	background-image: url("../images/snare-drum-with-white-lines.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top:10%;
+	left:37%;
+  }
+  
+  .k {
+	background-image: url("../images/splash.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top:10%;	
+	left: 57%;
+  }
+  
+  .drum.w {
+	background-image: url("../images/bass-drum.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top:55%;
+	left:37%;
+	background-size: 9rem;
+  }
+  
+  .set {
+	
+	max-width: 1000px;
+	width: 100%;
+	min-height: 450px;
+	height: 70%;
+	
+
+  }
+  
+  .pressed {
+	box-shadow: 0 3px 4px 0 #DBEDF3;
+	opacity: 0.5;
+  }
+  
+  
+  .drum {	
+	font-size: 3rem;
+	font-family: 'Sedgwick Ave', cursive;
+	line-height: 6;
+	font-weight: 900;
+	color: #06196B;
+	text-shadow: 3px 0 #DBEDF3;
+	border-radius: 30%;
+	width: 11rem;
+	height: 13rem;	
+	background-color: white;
+	background-size: 5rem;
+	
+  }
+
+/*END STYLES BATERIA************************************/
+
+
+
+
+
+#piano, #marimbas,#bateria{
+>>>>>>> bfc930622bb656cd1e83f69f566a4b2931f031ba
 	position: relative;
 	height: 100vh;
 	display: flex;
@@ -371,6 +465,7 @@ button{
 #piano,#bateria{
 	height: 120vh;
 }
+<<<<<<< HEAD
 footer{
 	height: 100px;
 }
@@ -378,3 +473,8 @@ footer{
 }
 
 
+=======
+
+
+}
+>>>>>>> bfc930622bb656cd1e83f69f566a4b2931f031ba
