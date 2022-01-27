@@ -3,11 +3,15 @@
 <img src="https://www.pngmart.com/files/3/Music-PNG-Photos.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Musica">
 <p><em> Educamás -> <a href="https://educamas.com.co/">Programate</a> Cohorte IV FREEDOM DEVELOPER. 💻 </br>
 </em></p>
+Este proyecto fue realizado con fines educativos para el bootcamp Programate de EducaMás. 
 
 <h1>🗒️ Link Backlog Jira</h1>
 https://dianach.atlassian.net/jira/software/projects/PROYEC/boards/1
 
 Trabajaremos en crear una web para una una escuela de música online, con el plus de que los usuarios van a poder practicar con algunos de los instrumentos porque estos van a reproducir sonidos con click o con pulsaciones de teclado.
+
+<h1>Contexto del proyecto</h1>
+La tecnología ha permitido que se puedan migrar a la virtualidad muchas de las actividades que eran estrictamente presenciales, entre esas la educación, y en este caso puntual, las escuelas de música. Desarrolla una web para la escuela de música "Toquen el DOM", en la que los usuarios pueden acceder al instrumento de su preferencia y practicar en él de forma didáctica. El diseño de la web queda a su criterio, aunque cabe aclarar que en los requerimientos de la escuela está la creatividad como punto importante a tener en cuenta.
 
 <h3>🛠 Tech Stack </h3>
 - 🌐 &nbsp; HTML5 | CSS3 | JAVASCRIPT
