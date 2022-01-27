@@ -28,4 +28,4 @@ La tecnología ha permitido que se puedan migrar a la virtualidad muchas de las 
 - 🌐 La distribución del contenido DEBERÍA hacerse con Flex-box o Grid system. • No se pueden utilizar frameworks ni librerías, el desarrollo debe ser vanilla. <br/>
 
 <h1> Deploy page <h1>
-  https://github.com/dianachavezr/proyecto2ToquemosElDom
+  https://dianachavezr.github.io/proyecto2ToquemosElDom/
