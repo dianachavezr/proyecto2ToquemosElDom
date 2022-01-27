@@ -29,5 +29,5 @@ La tecnología ha permitido que se puedan migrar a la virtualidad muchas de las 
 
 <h1>Desarrolladores<h1>
   
-👩🏻‍💻 Diana Chavez  https://github.com/dianachavezr <br/>
-👨🏻‍💻 Ronald Rosero https://github.com/Ronrook
+<h4> 👩🏻‍💻Diana Chavez  https://github.com/dianachavezr <h4><br/>
+<h4> 👨🏻‍💻 Ronald Rosero https://github.com/Ronrook <h4>
