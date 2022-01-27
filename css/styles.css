@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
 /*
-font-family: 'Montserrat', sans-serif;
-font-family: 'Work Sans', sans-serif;
+
 font-family: 'Sedgwick Ave', cursive;
 font-family: 'Signika Negative', sans-serif;
 */
@@ -81,10 +79,10 @@ nav a{
 	font-size: 1.1rem;
 }
 
-#navpiano, #navbateria, #navmarimbas{
+#navpiano, #navbateria{
 	width: 100%;
 	height: 10rem;
-	margin: 10% auto;
+	margin: 50% auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -94,18 +92,16 @@ nav a{
 }
 
 #navpiano{
-		background: #3B0717;
+	background:#3B0717
 	}
+	
 
 #navbateria{
 	background: #06196B;
 }
 
-#navmarimbas{
-	background: #000000;
-}
-
 #others {
+	visibility: hidden;
 	background: #2C032B;
 	padding: 20px;
 	border-radius: 0 50%;
@@ -127,16 +123,15 @@ nav a{
 button{
 	position: absolute;
 	display: flex;
-	top: 10%;
-	left: 10%;
+	top: 5%;
+	left: 5%;
 	padding: 20px;
 	border-radius: 25%;
 	background: #000000;
 	border: none;
 }
 
-
-#piano, #marimbas,#bateria{
+#piano, #bateria{
 	position: relative;
 	height: 100vh;
 	display: flex;
@@ -144,11 +139,98 @@ button{
 	align-items: center;
 	padding: 40px;
 	z-index: 1;
+	
 }
 
 #piano, #bateria{
 	border-bottom: 2px solid #2C032B;
 }
+
+/*BEGIN STYLES BATERIA************************************/
+
+
+.a {
+	background-image: url("../images/tom.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top:55%;
+	left: 15%;
+  }
+
+.l {
+	background-image: url("../images/tom.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top:55%;
+	left:60%;
+  }
+    
+  .s {
+	background-image: url("../images/hi-hat.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top:10%;
+	left:20%;
+  }
+ 
+  .j {	
+	background-image: url("../images/snare-drum-with-white-lines.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top:10%;
+	left:37%;
+  }
+  
+  .k {
+	background-image: url("../images/splash.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top:10%;	
+	left: 57%;
+  }
+  
+  .drum.w {
+	background-image: url("../images/bass-drum.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	top:55%;
+	left:37%;
+	background-size: 9rem;
+  }
+  
+  .set {
+	
+	max-width: 1000px;
+	width: 100%;
+	min-height: 450px;
+	height: 70%;
+	
+
+  }
+  
+  .pressed {
+	box-shadow: 0 3px 4px 0 #DBEDF3;
+	opacity: 0.5;
+  }
+  
+  
+  .drum {	
+	font-size: 3rem;
+	font-family: 'Sedgwick Ave', cursive;
+	line-height: 6;
+	font-weight: 900;
+	color: #06196B;
+	text-shadow: 3px 0 #DBEDF3;
+	border-radius: 30%;
+	width: 11rem;
+	height: 13rem;	
+	background-color: white;
+	background-size: 5rem;
+	
+  }
+
+/*END STYLES BATERIA************************************/
+
 
 /*BEGIN FOOTER STYLES***********************/	
 
@@ -162,8 +244,8 @@ button{
 	gap: 7px;
 	grid-template:
 	"header header" 0.8fr
-	"sidebar  main" 12.5fr
-	"sidebar footer" 0.5fr/
+	"sidebar  main" 10fr
+	"sidebar footer" 0.8fr/
 	1fr    4fr;
 }
 
@@ -176,15 +258,15 @@ button{
 	.grid-container{
 	grid-template:
 	"header header" 1fr
-	"sidebar main" 12.5fr
-	"sidebar footer" 0.5fr /
+	"sidebar main" 12fr
+	"sidebar footer"1.5fr /
 	1fr    3fr;
 }
 
-#navpiano, #navbateria, #navmarimbas{
+#navpiano, #navbateria{
 	width: 80%;
 	height: 6rem;
-	margin: 10% auto;
+	margin: 50% auto;
 }
 
 #others{
@@ -192,7 +274,43 @@ button{
 	margin: auto;
 	border-style: groove;
 }
+
+.drum {	
+	width: 8rem;
+	height: 8rem;
+  }
+  .drum.w{
+	  background-size: 7rem;
+	  top:60%;
+	  left: 40%;
+  }
+
+  .a{
+	  top:60%;
+	  left: 10%;
+  }
+  .s{
+	  top:18%;
+	  left:15%;
+  }
+  
+  .l{
+	top:60%;
+	 left:70%;
+  }
+
+  .j{
+	top:18%;
+	  left: 45%;
+  }
+  .k{
+	  top:18%;
+	  left: 74%;
+  }
+
 }
+
+
 
 
 /*RESPONSIVE CELULAR***********************/
@@ -202,8 +320,8 @@ button{
 	grid-template:
 	"header"   0.5fr
 	"sidebar"   0.5fr
-	"main"	   7.3fr
-	"footer"  0.5fr;
+	"main"	   4fr
+	"footer"  0.3fr;
 }
 
 /*BEGIN HEADER CELULAR**************/
@@ -237,16 +355,12 @@ button{
 	display: flex;
 }
 
-#navpiano, #navbateria, #navmarimbas{
+#navpiano, #navbateria{
 	height: 5rem;
-	margin: 2% auto;
+	margin: 5% auto;
 	display: flex;
 }
 
-#others {
-	margin-top: -5%;
-	padding: 2%;
-}
 /*END SIDEBAR CELULAR**************/
 
 
@@ -254,7 +368,13 @@ button{
 	padding: 3% 5%;
 	}
 
-#piano, #marimbas,#bateria{
+#piano,#bateria{
 	height: 120vh;
 }
+footer{
+	height: 100px;
 }
+
+}
+
+

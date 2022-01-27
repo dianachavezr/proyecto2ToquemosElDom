@@ -1,0 +1,455 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+/*
+
+font-family: 'Sedgwick Ave', cursive;
+font-family: 'Signika Negative', sans-serif;
+*/
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100% ;
+}
+
+body{
+	min-height: 100%;
+	background: #000000;
+	font-family: 'Signika Negative', sans-serif;
+	color: #DFDEDE;
+}
+
+h1{
+	font-family: 'Sedgwick Ave', cursive;
+	color: #ffffff;
+	font-size: 3rem;
+}
+
+a{
+	text-decoration: none;
+	color: #DFDEDE;
+}
+
+.grid-container > *{
+	box-shadow: -1px 1px 7px 2px gray;
+	border-radius: 4px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*BEGIN HEADER STYLES***********************/
+.header{
+	grid-area: header;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/*END HEADER STYLES***********************/
+
+
+/*BEGIN SIDEBAR STYLES***********************/
+.sidebar{
+	grid-area: sidebar;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background-image: url(../images/Note_key_white.png);
+	background-size: cover;
+	z-index: 2;
+}
+
+nav{
+	position: sticky;
+	top: 0;
+}
+
+nav a{
+	display: block;
+	font-family: 'Sedgwick Ave', cursive;
+	color: #DFDEDE;
+	font-weight: bolder;
+	font-size: 1.1rem;
+}
+
+#nav-acerca, #nav-notas, #nav-redes{
+	width: 100%;
+	height: 10rem;
+	margin: 10% auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0 50%;
+	opacity: 0.9;
+	border-style: groove;
+	padding: 20px;
+}
+
+.elementos-acerca {
+	font-family: 'Signika Negative', sans-serif;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+	color: #000000;
+}
+
+#nav-acerca{
+		background: #3B0717;
+	}
+
+#nav-notas{
+	background: #06196B;
+}
+
+#nav-redes{
+	background: #000000;
+}
+
+#others {
+	background: #2C032B;
+	padding: 20px;
+	border-radius: 0 50%;
+	color: #DFDEDE;
+	opacity: 0.9;
+}
+
+/*END SIDEBAR STYLES***********************/
+
+
+/*BEGIN MAIN STYLES***********************/
+.main{
+	grid-area: main;
+	background: #ffffff;
+	display: flex;
+	display: inline-block;
+}
+
+button{
+	position: absolute;
+	display: flex;
+	top: 5%;
+	left: 5%;
+	padding: 20px;
+	border-radius: 25%;
+	background: #000000;
+	border: none;
+}
+#boton2{
+	visibility: hidden;
+	position: absolute;
+	display: flex;
+	top: 5%;
+	left: 30%;
+	padding: 20px;
+	border-radius: 25%;
+	background: #000000;
+	border: none;
+}
+
+#acerca, #notas{
+	border-bottom: 2px solid #2C032B;
+}
+#acerca{
+	position: relative;
+	height: 100vh;
+	display: block;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 3%;
+	z-index: 1;
+	
+}
+
+#acerca h2{
+	margin:5% 0 1% 0;
+	font-family: 'Sedgwick Ave', cursive;
+	font-size: 2rem;
+	background-color:#3B0717;
+	color: #DFDEDE;
+	padding: 2% 4% 1% 4%;
+	border-radius: 0 50% 0 50%;
+	opacity: 0.8;
+	border-style: groove ;
+}
+
+#acerca  p{
+	padding:10px 70px;	
+}
+
+#acerca img{
+	max-width: 500px;
+	width: 100%;
+	height: auto;
+	border-radius: 10%;
+	border-style: groove;
+}
+
+
+
+#notas{
+	position: relative;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding:3%;
+	z-index: 1;
+}
+
+#videoPiano, #videoBateria{
+	margin-top: 70px;
+	width: 50%;
+	height: 90%;
+	padding: 0 5%;
+	color: black;
+}
+
+#videoPiano{
+	border-right: 1px solid  #2C032B;
+}
+
+#videoPiano h3, #videoBateria h3{
+	background-color:#06196B;
+	color: #DFDEDE;
+	padding: 3%;
+	border-radius: 0 50% 0 50%;
+	opacity: 0.8;
+	margin-bottom: 10px;
+	border-style: groove;
+}
+
+iframe{
+	width: 100%;
+	height:70%;
+}
+
+
+
+#redes{
+	position: relative;
+	height: 50vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 40px;
+	z-index: 1;
+}
+#redes img{
+	max-width: 6rem;
+	width: 100%;	
+}
+
+
+
+
+
+
+/*END MAIN STYLES***********************/
+
+/*BEGIN FOOTER STYLES***********************/	
+
+.footer{
+	grid-area: footer;
+}
+/*END FOOTER STYLES***********************/	
+
+.grid-container{
+	display: grid;
+	gap: 7px;
+	grid-template:
+	"header header" 0.8fr
+	"sidebar  main" 12.5fr
+	"sidebar footer" 0.5fr/
+	1fr    4fr;
+}
+
+
+
+	/*RESPONSIVE TABLET********************/
+
+@media (max-width: 768px){
+	.grid-container{
+	grid-template:
+	"header header" 1fr
+	"sidebar main" 12.5fr
+	"sidebar footer" 0.5fr /
+	1fr    3fr;
+}
+
+#nav-acerca, #nav-notas, #nav-redes{
+	width: 80%;
+	height: 6rem;
+	margin: 10% auto;
+}
+
+button{
+	top: 2%;
+	left: 2%;
+	padding: 10px;
+}
+#acerca{
+	padding: 10% 5%	;
+}
+#acerca h2{
+	margin:4% 0 1% 0;
+	font-size: 1.5rem;
+}
+
+#acerca  p{
+	padding:0;
+	font-size: 0.8rem;
+	
+}
+
+#notas{
+	display: block;
+	height: auto;
+}
+
+#videoPiano, #videoBateria{
+	margin: 8% 0 3% 0;
+	width: 100%;
+	height: 33rem;
+	border-right: 1px solid black;
+	padding: 6% 2%;
+	color: black;
+	border: none;
+	border-bottom: 1px solid #3B0717;
+	padding-bottom: 10%;
+	
+}
+
+ #videoBateria{
+	margin-top: -3%;
+	height: 33rem;
+	border: none;
+}
+#videoBateria p, #videoPiano p{
+	margin-bottom: 10px;
+
+}
+
+
+
+#videoPiano h3, #videoBateria h3{
+	width: 70%;
+	margin-left: 15%;
+}
+
+
+iframe{
+	width: 80%;
+	height:80%;
+}
+
+#redes img{
+	margin-top: 50%;	
+}
+}
+
+
+/*RESPONSIVE CELULAR***********************/
+
+@media (max-width: 640px){
+.grid-container{
+	grid-template:
+	"header"   0.5fr
+	"sidebar"   0.5fr
+	"main"	   6fr
+	"footer"  0.5fr;
+}
+
+/*BEGIN HEADER CELULAR**************/
+
+.header {	
+	display: block;
+	padding: 5% 0;
+}
+
+.header a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+}
+/*END HEADER CELULAR**************/
+
+/*BEGIN SIDEBAR CELULAR**************/
+.sidebar{
+	height: 30vh;
+	padding: 20px 10px;
+}
+
+.sidebar nav{
+	padding: 0 0 20px 0;
+	
+}
+
+#instrumentos{
+	width: 30rem;
+	height: 8rem;
+	display: flex;
+	
+}
+
+#nav-acerca, #nav-notas, #nav-redes{
+	height: 5rem;
+	margin: 2% auto;
+	display: flex;
+}
+button{
+	top: 2%;
+	left: 1%;
+}
+
+#boton2{
+	visibility: visible;
+	top: 2%;
+	left: 40%;
+	padding: 10px;
+	background-color: #3B0717;
+}
+
+/*END SIDEBAR CELULAR**************/
+
+
+.main{
+	padding: 3% 5%;
+	}
+
+#acerca, #notas{
+	height: 100vh;
+}
+
+#acerca{
+	padding: 6% 5%;
+}
+#acerca h2{
+	margin:12% 0 5% 0;
+	font-size: 1.5rem;
+}
+
+#acerca  p{
+	padding:0;
+	font-size: 0.8rem;
+}
+
+#notas{
+	display: block;
+	height: auto;
+
+}
+
+#redes img{
+	width: 80px;
+	margin: 100% 0 0 0;	
+}
+
+}

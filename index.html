@@ -15,9 +15,9 @@
 		<header class="header">
 			<h1>Toquemos el Dom</h1>
 			
-			<a href="">Acerca de nosotros</a>
-			<a href="">Notas sobre música</a>
-			<a href="">Nuestras redes</a>
+			<a href="info.html#acerca">Acerca de nosotros</a>
+			<a href="info.html#notas">Tutoriales música</a>
+			<a href="info.html#redes">Nuestras redes</a>
 
 		</header>
 		<!--END HEADER-->
@@ -28,9 +28,12 @@
 			
 			<nav>
 				<div id="instrumentos">
-					<a href="#piano" id="navpiano">Piano</a>
-					<a href="#bateria" id="navbateria">Batería</a>
-					<a href="#marimbas" id="navmarimbas">Marimba</a>
+					<a href="#piano" id="navpiano" class="audioPiano">Piano</a>
+					<audio src="./sounds/sonidoPiano.mp3"></audio>
+
+					<a href="#bateria" id="navbateria" class="audioBateria">Batería</a>
+					<audio src="./sounds/sonidoBateria.mp3"></audio>
+
 				</div>
 				<a href="" id="others">Otros Instrumentos</a>
 			</nav>
@@ -53,19 +56,26 @@
 
 			<section id="bateria">
 				<button><a href="#inicio">Volver a inicio</a></button>
-				bateria
+				
+				<div class="set">
+					<div class="set">
+						<button class="l drum">l</button>
+						<button class="a drum">a</button>
+						<button class="s drum">s</button>
+						<button class="j drum">j</button>
+						<button class="k drum">k</button>
+						<button class="w drum">w</button>
+				
+					  </div>
+		
+				</div>
+
+
 			</section>
 
 			<!--END SECTION BATERIA-->
 
-			<!--BEGIN SECTION MARIMBAS-->
-
-			<section id="marimbas">
-				<button><a href="#inicio">Volver a inicio</a></button>
-				marimbas
-			</section>
-
-			<!--END SECTION MARIMBAS-->
+			
 
 		</section>
 		<!--END SECTION MAIN-->
@@ -80,6 +90,5 @@
 	</div>
 	<script type="text/javascript"  src="js/piano.js"></script>
 	<script type="text/javascript"  src="js/bateria.js"></script>
-	<script type="text/javascript"  src="js/marimba.js"></script>
 </body>
 </html>
