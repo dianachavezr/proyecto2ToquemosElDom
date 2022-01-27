@@ -1,0 +1,151 @@
+.piano {
+    
+    display:none;
+  }
+
+  .pianoVisible {
+    display: flex;
+  }
+  
+.keyboard {
+    position: absolute;
+    bottom: 15%;
+    left: 32%;
+    color: black;
+
+}
+
+.keyboard-off {
+    position: absolute;
+    bottom: 15%;
+    left: 32%;
+    color: white;
+}
+
+.keyboard2 {
+    position: absolute;
+    top: 20%;
+    margin-left: 10px;
+    color: white;
+
+} 
+
+.keyboard2-off {
+  
+    position: absolute;
+    top: 20%;
+    margin-left: 10px;
+    color: black;
+
+} 
+
+
+
+
+.notesBlack-on {
+    position: relative;
+    top: 70%;
+    font-size: 1rem;
+    color: white;
+  
+  }
+  .notesBlack-off {
+    position: relative;
+    top: 70%;
+    font-size: 1rem;
+    color: black;
+  
+  }
+  
+  .notes-on {
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    color: black;
+  
+  }
+  .notes-off {
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    color: white;
+  }
+  
+  .white  {
+    position: relative;
+    width: 70px !important;
+    height: 300px;
+    background: white;
+    border: grey 2px solid;
+    border-radius: 3px;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+      3px 3px 5px rgba(0, 0, 0, 0.7);
+      
+  }
+
+  
+  /* .white h1 {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -10%);
+    user-select: none;
+  } */
+  
+  .white:active {
+    /* background-color: red; */
+    background-color: #ffc020;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+      
+  
+  
+  .black {
+    width: 40px;
+    height: 180px;
+    background: #000;
+    margin: 0 -20px;
+    border-radius: 5px;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+      3px 3px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  
+  .black:active {
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+      3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+@media (max-width: 1024px){
+
+  .white{
+ 
+    width: 3.5rem!important;
+    height: 250px;
+  }
+
+  .black {
+    width: 2rem;
+    height: 120px;
+    margin: 0 -17px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .white{
+ 
+    width: 2.5rem!important;
+    height: 250px;
+    font-size: 0.8rem;
+  }
+
+  .black {
+    width: 2rem;
+    height: 120px;
+    margin: 0 -17px;
+    font-size: 0.8rem;
+  }
+}

@@ -1,3 +1,17 @@
+
+/*Audio Bateria*/
+    let audioBateria = document.querySelector(".audioBateria")
+    let audioEtiqueta2 = document.querySelector("audio")
+
+    audioBateria.addEventListener("click", () => {
+      audioEtiqueta2.setAttribute("src", "./sounds/sonidoBateria.mp3")
+      audioEtiqueta2.play()
+      console.log(`Reproduciendo: ${audioEtiqueta2.src}`)
+    })
+
+
+
+   
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numberOfDrumButtons; i++) {
