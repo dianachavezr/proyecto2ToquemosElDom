@@ -7,24 +7,51 @@
     display: flex;
   }
   
-  .keyboard {
+.keyboard {
     position: absolute;
     bottom: 15%;
     left: 32%;
     color: black;
 
-  }
+}
 
-  .notesBlack-on {
+.keyboard-off {
+    position: absolute;
+    bottom: 15%;
+    left: 32%;
+    color: white;
+}
+
+.keyboard2 {
+    position: absolute;
+    top: 20%;
+    margin-left: 10px;
+    color: white;
+
+} 
+
+.keyboard2-off {
+  
+    position: absolute;
+    top: 20%;
+    margin-left: 10px;
+    color: black;
+
+} 
+
+
+
+
+.notesBlack-on {
     position: relative;
-    top: 85%;
+    top: 70%;
     font-size: 1rem;
     color: white;
   
   }
   .notesBlack-off {
     position: relative;
-    top: 85%;
+    top: 70%;
     font-size: 1rem;
     color: black;
   

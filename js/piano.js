@@ -1,14 +1,14 @@
-// const WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm']
-// const BLACK_KEYS = ['s', 'd', 'g', 'h', 'j']
 
-const BLACK_KEYS = ['q', 'w', 'e', 'r', 'y', 'u', 'i', 'o', 'p', 'l']
-const WHITE_KEYS = ['a', 's', 'z', 'd', 'x', 'f', 'g', 'h', 'k', 'j', 'c', 'b', 'n', 'm',]
+
+const BLACK_KEYS = ['Q', 'W', 'E', 'R', 'Y', 'T', 'U', 'I', 'O', 'P', 'L']
+const WHITE_KEYS = ['A', 'S', 'Z', 'D', 'X', 'F', 'C', 'G', 'H', 'J', 'K', 'B', 'N', 'M',]
 const keys = document.querySelectorAll('.key')
 const whiteKeys = document.querySelectorAll('.key.white')
 const blackKeys = document.querySelectorAll('.key.black')
 
 
 const buttonSeeNotes = document.getElementById('btn')
+const buttonSeeKeyboard = document.getElementById('btn2')
 const piano = document.querySelector('.pianoPruba')
 const playPiano = document.querySelector('.botonO')
 const iconPiano = document.querySelector('.icono-piano')
@@ -24,7 +24,8 @@ playPiano.addEventListener('click', (e) => {
     if (playPiano){
         piano.classList.add('pianoVisible')
         iconPiano.classList.add('ocultar-icono')
-        buttonSeeNotes.classList.add('notas-on')
+        buttonSeeNotes.classList.add('boton-ver-notas-on')
+        buttonSeeKeyboard.classList.add('ver-teaclado-on')
         console.log('activado');
         
 
@@ -97,6 +98,39 @@ playPiano.addEventListener('click', (e) => {
             
         })
 
+        buttonSeeKeyboard.addEventListener('click', (e) => {
+            
+            e.target.classList.toggle('activated')
+            let keyboardBlack = document.querySelectorAll(".keyboard"); 
+            let keyboardWhite = document.querySelectorAll(".keyboard2");
+        
+            if (buttonSeeKeyboard){
+                buttonSeeKeyboard.textContent = 'Ver teclado'
+
+                keyboardBlack.forEach(key => {
+                    key.classList.add('keyboard-off')
+                })   
+
+                keyboardWhite.forEach(key => {
+                    key.classList.add('keyboard2-off')
+                }) 
+            }
+        
+            if (!(buttonSeeKeyboard.classList.contains('activated'))){
+                buttonSeeKeyboard.textContent = 'ocultar teclado'
+                
+                keyboardBlack.forEach(key => {
+                    key.classList.remove('keyboard-off')
+               
+                }) 
+                keyboardWhite.forEach(key => {
+                    key.classList.remove('keyboard2-off')
+               
+                })      
+                
+            }
+            
+        })
         
     }
 
@@ -104,7 +138,8 @@ playPiano.addEventListener('click', (e) => {
           console.log('desativado');
           piano.classList.remove('pianoVisible')
           iconPiano.classList.remove('ocultar-icono')
-          buttonSeeNotes.classList.remove('notas-on')
+          buttonSeeNotes.classList.remove('boton-ver-notas-on')
+          buttonSeeKeyboard.classList.remove('ver-teaclado-on')
     
     
     }

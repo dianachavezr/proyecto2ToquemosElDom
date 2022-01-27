@@ -124,7 +124,33 @@ nav a{
 	display: inline-block;
 }
 /* comienzo piano */
+.titulo-piano {
+	margin:5% 0 1% 0;
+	font-family: 'Sedgwick Ave', cursive;
+	font-size: 2rem;
+	background-color:#3B0717;
+	position: absolute;
+	top: 5%;
+	left: 30%;
+	color: #DFDEDE;
+	padding: 2% 4% 1% 4%;
+	border-radius: 0 50% 0 50%;
+	opacity: 0.8;
+	border-style: groove ;
 
+}
+
+
+.icono-piano{
+	position: absolute;
+	top: 30%;
+	left: 30%;
+
+
+
+
+
+}
 .ocultar-icono {
 	visibility: hidden;
 	
@@ -133,8 +159,8 @@ nav a{
 button{
 	position: absolute;
 	display: flex;
-	top: 10%;
-	left: 10%;
+	top: 5%;
+	left: 5%;
 	padding: 20px;
 	border-radius: 25%;
 	background: #000000;
@@ -143,7 +169,7 @@ button{
 
 .botonO {
 	position: absolute;
-	top: 20%;
+	top: 30%;
 	left: 43%;
 	padding: 20px;
 	border-radius: 25%;
@@ -153,7 +179,7 @@ button{
 
 }
 
-.ver-Notas-off {
+.boton-ver-notas-off {
 
 	visibility: hidden;
 	position: absolute;
@@ -168,7 +194,7 @@ button{
 
 }
 
-.notas-on {
+.boton-ver-notas-on {
 	visibility: visible;
 	position: absolute;
 	top: 35%;
@@ -180,8 +206,31 @@ button{
 
 }
 
+.ver-teaclado-off {
+	visibility: hidden;
+	position: absolute;
+	top: 35%;
+	left: 75%;
+	padding: 20px;
+	color: white;
+	border-radius: 25%;
+	background: black;
+	border: none;
+	
 
+}
+.ver-teaclado-on {
+	visibility: visible;
+	position: absolute;
+	top: 35%;
+	left: 75%;
+	padding: 20px;
+	color: white;
+	border-radius: 25%;
+	background: black;
+	border: none;
 
+}
 
 
 .piano {
